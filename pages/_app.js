@@ -12,6 +12,7 @@ import "@/styles/AboutMe.css";
 import "@/styles/MyProject.css";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 export default function App({ Component, pageProps }) {
   const searchParams = useSearchParams();
 
@@ -29,6 +30,7 @@ export default function App({ Component, pageProps }) {
       </header>
       <Suspense fallback={<>Loading...</>}>
         <Component {...pageProps} />
+        <SpeedInsights />
       </Suspense>
     </>
   );
