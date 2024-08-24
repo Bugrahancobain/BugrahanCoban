@@ -1,0 +1,113 @@
+.navbox {
+  display: flex;
+  justify-content: space-between;
+  top: 30px;
+  padding: 0 30px 0 30px;
+  width: 100vw;
+  text-align: center;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  padding: 25px 0px;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+.navlink {
+  display: flex;
+}
+
+.homeLink,
+.myProjectLink {
+  margin: 20px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.homeLink:hover {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.navBarRightSide {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.languageSwitcher {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 14px;
+  font-size: 14px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.languageSwitcher:hover {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.myProjectLink:hover {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+}
+
+@media only screen and (max-width: 620px) {
+  .navbox {
+    padding: 10px;
+  }
+  .navbar {
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 680px) {
+  .bannerCvBtn {
+    display: none;
+  }
+}
+@media (max-width: 455px) {
+  .languageSwitcher {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .myProjectLink {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .homeLink {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .navbox {
+    padding: 0px;
+  }
+  .navbar {
+    padding: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .languageSwitcher {
+    padding: 8px;
+    font-size: 8px;
+  }
+  .myProjectLink {
+    padding: 8px;
+    font-size: 8px;
+  }
+  .homeLink {
+    padding: 8px;
+    font-size: 8px;
+  }
+}
