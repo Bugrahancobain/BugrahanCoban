@@ -26,11 +26,9 @@
 
 .iconClass {
   color: black;
-  border-radius: 50%;
-  font-size: 30px;
+  width: 30px;
   margin: 7px;
 }
-
 .iconClass:visited {
   color: black;
 }
@@ -137,9 +135,11 @@
     padding: 50px 25px 0 50px;
     font-size: medium;
   }
-  .aboutMeTitle,
-  .iconClass {
+  .aboutMeTitle {
     font-size: larger !important;
+  }
+  .iconClass {
+    width: 50px;
   }
   .bottomleft,
   .bottomRight {
