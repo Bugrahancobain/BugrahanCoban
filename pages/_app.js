@@ -1,3 +1,4 @@
+import * as gtag from "../gtag";
 import "@/styles/globals.css";
 import "@/styles/Banner.css";
 import "@/styles/Contact.css";
@@ -10,14 +11,24 @@ import "@/styles/Skills.css";
 import "@/styles/Me.css";
 import "@/styles/AboutMe.css";
 import "@/styles/MyProject.css";
-import { useSearchParams } from "next/navigation";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 import { Suspense } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
 
 export default function App({ Component, pageProps }) {
-  const searchParams = useSearchParams();
+  const router = useRouter();
 
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
   return (
     <>
       <header>
@@ -29,18 +40,18 @@ export default function App({ Component, pageProps }) {
           content="Bugrahan Çoban, HTML, CSS, JavaScript, React.js, Next.js, SASS, TypeScript"
         />
       </header>
-      {/* Google Analytics Script */}
       <Script
         async
-        src="https://www.googletagmanager.com/gtag/js?id=G-LW4JKF51D5"
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
       />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
-          gtag('config', 'G-LW4JKF51D5');
+          gtag('config', '${gtag.GA_TRACKING_ID}', {
+            page_path: window.location.pathname,
+          });
         `}
       </Script>
       <Suspense fallback={<>Loading...</>}>
