@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import HomePage from "./HomePage";
-import { ReactIco } from "../public/react.ico";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +26,7 @@ export default function Home({ locale, t }) {
           name="keywords"
           content="Bugrahan Çoban, HTML, CSS, JavaScript, React.js, Next.js, SASS, TypeScript"
         />
-        <link rel="fav" type="icon" href={ReactIco}></link>
+        <link rel="fav" type="icon" href="react.ico"></link>
       </Head>
       <HomePage locale={locale} t={t} />
     </>

@@ -13,12 +13,14 @@ import "@/styles/MyProject.css";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
+
 export default function App({ Component, pageProps }) {
   const searchParams = useSearchParams();
 
   return (
     <>
-      <head>
+      <header>
         <title>Bugrahan Coban</title>
         <meta name="description" content="My Cv Website." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,16 +28,21 @@ export default function App({ Component, pageProps }) {
           name="keywords"
           content="Bugrahan Çoban, HTML, CSS, JavaScript, React.js, Next.js, SASS, TypeScript"
         />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-LW4JKF51D5"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-LW4JKF51D5');
-        </script>
-      </head>
+      </header>
+      {/* Google Analytics Script */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-LW4JKF51D5"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-LW4JKF51D5');
+        `}
+      </Script>
       <Suspense fallback={<>Loading...</>}>
         <Component {...pageProps} />
         <SpeedInsights />
