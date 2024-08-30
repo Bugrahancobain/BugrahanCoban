@@ -62,6 +62,16 @@
   background-color: white;
 }
 
+.faBarsIconClass {
+  color: black;
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+}
+.faBarsIconClass:visited {
+  color: black;
+}
+
 @media only screen and (max-width: 620px) {
   .navbox {
     padding: 10px;
@@ -72,7 +82,7 @@
     text-align: center;
   }
 }
-@media (max-width: 680px) {
+@media (max-width: 698px) {
   .bannerCvBtn {
     display: none;
   }
@@ -84,11 +94,9 @@
   }
   .myProjectLink {
     padding: 10px;
-    font-size: 10px;
   }
   .homeLink {
     padding: 10px;
-    font-size: 10px;
   }
   .navbox {
     padding: 0px;
@@ -109,5 +117,43 @@
   .homeLink {
     padding: 8px;
     font-size: 8px;
+  }
+}
+@media (max-width: 471px) {
+  .faBarsIconClass {
+    color: white;
+    font-size: 30px;
+    display: flex !important;
+  }
+  .faBarsIconClass:visited {
+    color: white;
+  }
+  .navlink {
+    position: absolute;
+    flex-direction: column;
+    top: 80px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.801);
+    display: none;
+  }
+  .navlink.open {
+    display: block;
+  }
+  .navlink a {
+    display: block;
+  }
+  .navBarRightSide {
+    position: absolute;
+    right: 10px;
+  }
+  .homeLink {
+    margin: 0 0 0 0;
+    padding: 15px;
+    border: none;
+  }
+  .myProjectLink {
+    margin: 0;
+    padding: 15px;
+    border: none;
   }
 }

@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <header>
+      <head>
         <title>Bugrahan Coban</title>
         <meta name="description" content="My Cv Website." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,8 +26,16 @@ export default function App({ Component, pageProps }) {
           name="keywords"
           content="Bugrahan Çoban, HTML, CSS, JavaScript, React.js, Next.js, SASS, TypeScript"
         />
-        <link rel="icon" href="#" />
-      </header>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LW4JKF51D5"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-LW4JKF51D5');
+        </script>
+      </head>
       <Suspense fallback={<>Loading...</>}>
         <Component {...pageProps} />
         <SpeedInsights />

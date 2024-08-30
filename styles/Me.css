@@ -2,12 +2,12 @@
   position: absolute;
   z-index: 1;
   width: 248px;
-  height: 244px;
+  height: 248px;
   border: 10px solid rgb(237, 239, 245);
   border-radius: 50%;
   object-fit: cover;
-  top: calc(100vh - 122px);
-  left: calc(50% - 140px);
+  top: 200px;
+  left: calc(50% - 124px);
 }
 
 .slider {
@@ -48,10 +48,10 @@
 }
 @media only screen and (min-width: 856px) and (max-width: 1281px) {
   .bugrahanImg {
-    width: 350px;
-    height: 350px;
-    top: calc(100vh - 175px);
-    left: calc(50% - 175px);
+    width: 248px;
+    height: 248px;
+    top: 150px;
+    left: calc(50% - 124px);
   }
 }
 
@@ -59,7 +59,7 @@
   .bugrahanImg {
     width: 200px;
     height: 200px;
-    top: calc(100vh);
+    top: 150px;
     left: calc(50% - 100px);
   }
   .prev-button {
