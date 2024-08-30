@@ -27,7 +27,7 @@ export default function Home({ locale, t }) {
           name="keywords"
           content="Bugrahan Çoban, HTML, CSS, JavaScript, React.js, Next.js, SASS, TypeScript"
         />
-        <link rel="fav" type="image/x-icon" href={ReactIco}></link>
+        <link rel="fav" type="icon" href={ReactIco}></link>
       </Head>
       <HomePage locale={locale} t={t} />
     </>
