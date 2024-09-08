@@ -49,5 +49,9 @@
   "outOfRelease": "Non Rilasciato",
   "inProgress": "In Corso",
   "release": "Rilascia",
-  "comingSoon": "Prossimamente"
+  "comingSoon": "Prossimamente",
+  "Explanation": "Spiegazione",
+  "KaramansExplanation": "Realizzato su misura per un'azienda tessile che opera nel commercio internazionale, con l'aggiunta di una libreria linguistica.",
+  "DoseCalculateExplanation": "Sviluppato per veterinari, da utilizzare nel calcolo della dose di tutti i farmaci per gli animali.",
+  "CafeMenuProjectExplanation": "Pannello separato sviluppato per la gestione dinamica di categorie, prodotti, prezzi, ecc. per i caffè."
 }

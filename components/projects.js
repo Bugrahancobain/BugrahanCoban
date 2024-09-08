@@ -26,6 +26,10 @@ function Projects({ locale, t }) {
               <p>
                 <b>{t?.status}:</b> {t?.finished} / {t?.outOfRelease}
               </p>
+              <br />
+              <p>
+                <b>{t?.Explanation}: </b> {t?.KaramansExplanation}
+              </p>
             </div>
           </a>
         </div>
@@ -51,6 +55,11 @@ function Projects({ locale, t }) {
               <p>
                 <b>{t?.status}:</b> {t?.inProgress} / {t?.release}
               </p>
+              <br />
+              <p>
+                <b>{t?.Explanation}: </b>
+                {t?.DoseCalculateExplanation}
+              </p>
             </div>
           </a>
         </div>
@@ -59,22 +68,26 @@ function Projects({ locale, t }) {
             style={{ textDecoration: "none" }}
             className="projectlink"
             target="_blank"
-            href="https://bugrahancoban.com/"
+            href="https://cafe-menu-project.vercel.app/"
           >
             <img
               loading="lazy"
               className="cardImg"
-              src="/ComingSoon.webp"
-              alt="comingSoon"
+              src="/cafeMenu.webp"
+              alt="cafeMenu"
               style={{ width: "100%" }}
             />
 
             <div className="cardContainer">
               <h4>
-                <b>{t?.comingSoon}</b>
+                <b>Cafe Menu Project</b>
               </h4>
               <p>
-                <b>{t?.status}:</b> {t?.inProgress} / {t?.outOfRelease}
+                <b>{t?.status}:</b> {t?.finished} / {t?.release}
+              </p>
+              <br />
+              <p>
+                <b>{t?.Explanation}: </b> {t?.CafeMenuProjectExplanation}
               </p>
             </div>
           </a>
@@ -96,10 +109,14 @@ function Projects({ locale, t }) {
 
             <div className="cardContainer">
               <h4>
-                <b>{t?.comingSoon}</b>
+                <b></b>
               </h4>
               <p>
                 <b>{t?.status}:</b> {t?.inProgress} / {t?.outOfRelease}
+              </p>
+              <br />
+              <p>
+                <b>Açıklama: </b> {t?.comingSoon}
               </p>
             </div>
           </a>

@@ -49,5 +49,9 @@
   "outOfRelease": "Niet Uitgebracht",
   "inProgress": "In Uitvoering",
   "release": "Uitbrengen",
-  "comingSoon": "Binnenkort"
+  "comingSoon": "Binnenkort",
+  "Explanation": "Uitleg",
+  "KaramansExplanation": "Speciaal gemaakt voor een textielbedrijf dat internationaal handel drijft door een taalbibliotheek toe te voegen.",
+  "DoseCalculateExplanation": "Ontwikkeld voor dierenartsen om te worden gebruikt bij de doseringsberekening van alle medicijnen voor dieren.",
+  "CafeMenuProjectExplanation": "Een apart paneel ontwikkeld om dynamische categorieën, producten, prijzen enz. voor cafés te beheren."
 }

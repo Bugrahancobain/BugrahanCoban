@@ -49,5 +49,9 @@
   "outOfRelease": "Out of Release",
   "inProgress": "In Progress",
   "release": "Release",
-  "comingSoon": "Coming Soon"
+  "comingSoon": "Coming Soon",
+  "Explanation": "Explanation",
+  "KaramansExplanation": "Custom-made for a textile company engaged in international trade by adding a language library.",
+  "DoseCalculateExplanation": "Developed for veterinarians to use in calculating the dosage of all medications for animals.",
+  "CafeMenuProjectExplanation": "A separate panel developed to manage dynamic categories, products, prices, etc., for cafés."
 }

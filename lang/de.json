@@ -49,5 +49,9 @@
   "outOfRelease": "Nicht Veröffentlicht",
   "inProgress": "In Arbeit",
   "release": "Veröffentlichen",
-  "comingSoon": "Demnächst"
+  "comingSoon": "Demnächst",
+  "Explanation": "Erklärung",
+  "KaramansExplanation": "Es wurde durch das Hinzufügen einer Sprachbibliothek für ein international tätiges Textilunternehmen individuell angepasst.",
+  "DoseCalculateExplanation": "Entwickelt für Tierärzte, um die Dosierung aller Medikamente für Tiere zu berechnen.",
+  "CafeMenuProjectExplanation": "Ein separates Panel wurde für Cafés entwickelt, um dynamisch Kategorien, Produktpreise usw. zu verwalten."
 }

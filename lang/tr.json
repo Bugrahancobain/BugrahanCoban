@@ -49,5 +49,9 @@
   "outOfRelease": "Yayınlanmadı",
   "inProgress": "Devam Ediyor",
   "release": "Yayınla",
-  "comingSoon": "Yakında"
+  "comingSoon": "Yakında",
+  "Explanation": "Açıklama",
+  "KaramansExplanation": "Uluslar arası ticaret yapan tekstil firması için dil kütüphanesi eklenerek özel yapıldı.",
+  "DoseCalculateExplanation": "Veteriner hekimler için tüm ilaçların hayvanlara doz hesabında kullanılması için geliştirildi.",
+  "CafeMenuProjectExplanation": "Cafeler için dinamik kategori ürün fiyat vb. düzenleyebilmesi için ayrı panel geliştirildi."
 }

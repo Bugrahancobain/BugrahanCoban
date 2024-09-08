@@ -49,5 +49,9 @@
   "outOfRelease": "Nie Wydany",
   "inProgress": "W Toku",
   "release": "Wydaj",
-  "comingSoon": "Wkrótce"
+  "comingSoon": "Wkrótce",
+  "Explanation": "Wyjaśnienie",
+  "KaramansExplanation": "Stworzone na zamówienie dla firmy tekstylnej zajmującej się handlem międzynarodowym, poprzez dodanie biblioteki językowej.",
+  "DoseCalculateExplanation": "Opracowane dla weterynarzy, aby stosować przy obliczaniu dawki wszystkich leków dla zwierząt.",
+  "CafeMenuProjectExplanation": "Osobny panel opracowany do zarządzania dynamicznymi kategoriami, produktami, cenami itp. dla kawiarni."
 }
