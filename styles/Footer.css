@@ -25,6 +25,7 @@
   width: 30px;
   margin: 7px;
   transition-duration: 0.3s;
+  font-size: 30px;
 }
 .iconClass:hover {
   transform: translateY(-5px);
