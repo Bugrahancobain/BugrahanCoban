@@ -48,7 +48,7 @@ function Navbar({ locale, t }) {
           <div>
             <a
               className="bannerCvBtn"
-              href="/BugrahanCobanCv.pdf"
+              href="/bugrahancobancv.pdf"
               download="BugrahanCobanCv"
             >
               {t?.downloadmyfullresume}
