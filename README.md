@@ -1,7 +1,5 @@
 # Buğrahan Çoban – Personal Portfolio Website
 
-Let's dive into the **BugrahanCoban** project and provide a thorough, detailed explanation of the code, components, libraries, and functionality used. We'll break everything down so that it's clear and easy to understand, and we’ll also include specific code examples to ensure clarity.
-
 ### Overview
 
 This project appears to be a **personal portfolio website** showcasing the skills and projects of **Bugrahan Coban**. It features sections such as an introduction, portfolio projects, and a resume. The website is developed using **React**, a popular JavaScript library for building user interfaces. Additional tools and libraries are used to enhance the website’s performance, responsiveness, and user experience.
