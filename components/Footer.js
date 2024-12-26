@@ -1,14 +1,15 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faSquareTwitter,
-  faSquareInstagram,
-  faSquareWhatsapp,
-  faSquareGithub,
-} from "@fortawesome/free-brands-svg-icons";
+"use client";
+import React, { useTransition } from "react";
+import { FaLinkedin, FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
+import { FaSquareInstagram, FaSquareWhatsapp } from "react-icons/fa6";
+import { getMessages } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
-function Footer({ locale, t }) {
+function Footer({ params }) {
+
+  // params.locale'i await ile çöz
+  const locale = params?.locale || "en"; // Varsayılan dil atanır
+  const t = useTranslations();
   const year = new Date().getFullYear();
   return (
     <div className="footer">
@@ -18,7 +19,7 @@ function Footer({ locale, t }) {
           href="/bugrahancobancv.pdf"
           download="BugrahanCobanCv"
         >
-          {t?.downloadmyfullresume}
+          {t("downloadmyfullresume")}
         </a>
       </div>
       <div className="social">
@@ -27,22 +28,22 @@ function Footer({ locale, t }) {
             target="_blank"
             href="https://www.linkedin.com/in/bu%C4%9Frahan-%C3%A7oban-37934724a/?originalSubdomain=tr"
           >
-            <FontAwesomeIcon icon={faLinkedin} className="iconClass" />
+            <FaLinkedin className="iconClass" />
           </a>
           <a target="_blank" href="https://x.com/Muzisyen_Adam">
-            <FontAwesomeIcon icon={faSquareTwitter} className="iconClass" />
+            <FaTwitterSquare className="iconClass" />
           </a>
           <a target="_blank" href="https://www.instagram.com/muzisyenadam/">
-            <FontAwesomeIcon icon={faSquareInstagram} className="iconClass" />
+            <FaSquareInstagram className="iconClass" />
           </a>
           <a
             target="_blank"
             href="https://api.whatsapp.com/send/?phone=905061566364&text&type=phone_number&app_absent=0"
           >
-            <FontAwesomeIcon icon={faSquareWhatsapp} className="iconClass" />
+            <FaSquareWhatsapp className="iconClass" />
           </a>
           <a target="_blank" href="https://github.com/Bugrahancobain">
-            <FontAwesomeIcon icon={faSquareGithub} className="iconClass" />
+            <FaGithubSquare className="iconClass" />
           </a>
         </div>
       </div>

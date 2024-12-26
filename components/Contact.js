@@ -1,21 +1,24 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 
-function Contact({ locale, t }) {
+function Contact({ params }) {
+  const t = useTranslations();
+
   return (
     <div className="contact">
       <div className="quickId">
         <div className="start"></div>
         <div className="quickIdTop">
           <div className="quickIdTitle">
-            <span className="title2Word">{t?.quickIdTitleTwoWorld}</span>
-            <span className="titleOtherWord">{t?.quickIdTitleOutherWorld}</span>
+            <span className="title2Word">{t("quickIdTitleTwoWorld")}</span>
+            <span className="titleOtherWord">{t("quickIdTitleOutherWorld")}</span>
           </div>
         </div>
         <div className="quickIdBottom">
           <div className="titles">
-            <span>{t?.phone}</span>
-            <span>{t?.email}</span>
-            <span>{t?.address}</span>
+            <span>{t("phone")}</span>
+            <span>{t("email")}</span>
+            <span>{t("address")}</span>
           </div>
 
           <div className="contexts">
@@ -31,8 +34,8 @@ function Contact({ locale, t }) {
       <div className="contactMe">
         <div className="contactMeTop">
           <div className="contactMeTitle">
-            <span className="title2Word">{t?.contactTitleTwoWorld}</span>
-            <span className="titleOtherWord">{t?.contactTitleOutherWorld}</span>
+            <span className="title2Word">{t("contactTitleTwoWorld")}</span>
+            <span className="titleOtherWord">{t("contactTitleOutherWorld")}</span>
           </div>
         </div>
         <div className="contactMeBottom">
@@ -46,7 +49,7 @@ function Contact({ locale, t }) {
             <div className="formObjects">
               <div className="formObject">
                 <label htmlFor="name" className="formTitles">
-                  {t?.name}*
+                  {t("name")}*
                 </label>
                 <input
                   id="name"
@@ -70,7 +73,7 @@ function Contact({ locale, t }) {
               </div>
               <div className="formObject">
                 <label htmlFor="subject" className="formTitles">
-                  {t?.subject}*
+                  {t("subject")}*
                 </label>
                 <input
                   id="subject"
@@ -83,7 +86,7 @@ function Contact({ locale, t }) {
             </div>
             <div>
               <label htmlFor="message" className="formTitles">
-                {t?.message}*
+                {t("message")}*
               </label>
               <textarea
                 id="message"
@@ -94,7 +97,7 @@ function Contact({ locale, t }) {
               />
             </div>
             <button className="formSubmitBtn" type="submit">
-              {t?.submit}
+              {t("submit")}
             </button>
           </form>
         </div>

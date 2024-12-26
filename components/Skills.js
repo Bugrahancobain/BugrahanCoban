@@ -1,12 +1,15 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 
-function Skills({ locale, t }) {
+function Skills({ params }) {
+  const t = useTranslations();
+
   return (
     <div className="skills">
       <div className="skillsTop">
         <div className="skillsTitle">
-          <span className="title2Word">{t?.skillsTitleTwoWorld}</span>
-          <span className="titleOtherWord">{t?.skillsTitleOutherWorld}</span>
+          <span className="title2Word">{t("skillsTitleTwoWorld")}</span>
+          <span className="titleOtherWord">{t("skillsTitleOutherWorld")}</span>
         </div>
       </div>
       <div className="skillsBottom">
@@ -30,7 +33,7 @@ function Skills({ locale, t }) {
                   fontWeight: "bolder",
                 }}
               >
-                {t?.proficiendClass}
+                {t("proficiendClass")}
               </p>
             </div>
             <div className="box2">
@@ -51,7 +54,7 @@ function Skills({ locale, t }) {
                   fontWeight: "bolder",
                 }}
               >
-                {t?.proficiendClass}
+                {t("proficiendClass")}
               </p>
             </div>
           </div>
@@ -75,7 +78,7 @@ function Skills({ locale, t }) {
                   fontWeight: "bolder",
                 }}
               >
-                {t?.advanced}
+                {t("advanced")}
               </p>
             </div>
           </div>
@@ -101,7 +104,7 @@ function Skills({ locale, t }) {
                   fontWeight: "bolder",
                 }}
               >
-                {t?.proficiendClass}
+                {t("proficiendClass")}
               </p>
             </div>
           </div>
@@ -125,7 +128,7 @@ function Skills({ locale, t }) {
                   fontWeight: "bolder",
                 }}
               >
-                {t?.advanced}
+                {t("advanced")}
               </p>
             </div>
           </div>
@@ -150,7 +153,7 @@ function Skills({ locale, t }) {
                 fontWeight: "bolder",
               }}
             >
-              {t?.advanced}
+              {t("advanced")}
             </p>
           </div>
         </div>

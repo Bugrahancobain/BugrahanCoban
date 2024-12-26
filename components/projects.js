@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 
-function Projects({ locale, t }) {
+function Projects({ params }) {
+  const t = useTranslations();
+
   return (
     <div className="projects">
       <div className="projectCards">
@@ -24,11 +27,11 @@ function Projects({ locale, t }) {
                 <b>Karamans Tekstil</b>
               </h4>
               <p>
-                <b>{t?.status}:</b> {t?.finished} / {t?.outOfRelease}
+                <b>{t("status")}:</b> {t("finished")} / {t("outOfRelease")}
               </p>
               <br />
               <p>
-                <b>{t?.Explanation}: </b> {t?.KaramansExplanation}
+                <b>{t("Explanation")}: </b> {t("KaramansExplanation")}
               </p>
             </div>
           </a>
@@ -53,12 +56,12 @@ function Projects({ locale, t }) {
                 <b>Dose Calculate</b>
               </h4>
               <p>
-                <b>{t?.status}:</b> {t?.inProgress} / {t?.release}
+                <b>{t("status")}:</b> {t("inProgress")} / {t("release")}
               </p>
               <br />
               <p>
-                <b>{t?.Explanation}: </b>
-                {t?.DoseCalculateExplanation}
+                <b>{t("Explanation")}: </b>
+                {t("DoseCalculateExplanation")}
               </p>
             </div>
           </a>
@@ -83,11 +86,11 @@ function Projects({ locale, t }) {
                 <b>Cafe Menu Project</b>
               </h4>
               <p>
-                <b>{t?.status}:</b> {t?.finished} / {t?.release}
+                <b>{t("status")}:</b> {t("finished")} / {t("release")}
               </p>
               <br />
               <p>
-                <b>{t?.Explanation}: </b> {t?.CafeMenuProjectExplanation}
+                <b>{t("Explanation")}: </b> {t("CafeMenuProjectExplanation")}
               </p>
             </div>
           </a>
@@ -112,11 +115,11 @@ function Projects({ locale, t }) {
                 <b></b>
               </h4>
               <p>
-                <b>{t?.status}:</b> {t?.inProgress} / {t?.outOfRelease}
+                <b>{t("status")}:</b> {t("inProgress")} / {t("outOfRelease")}
               </p>
               <br />
               <p>
-                <b>Açıklama: </b> {t?.comingSoon}
+                <b>Açıklama: </b> {t("comingSoon")}
               </p>
             </div>
           </a>
